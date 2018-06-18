@@ -10,7 +10,24 @@ public class Distributor {
     private String code;
     private String upLineCode;
     private String upLineSide;
+    private String phoneNumber;
+    private String leftSL= null;
+    private String rightSL=null;
+    private String dbName=null;
     private String title, bMTitle;
+    
+    public Distributor(){}
+    public Distributor(String surname, String fisrstName, String code, String upLineCode,
+    		String upLineSide,String phoneNumber,String dbName) {
+		// TODO Auto-generated constructor stub
+    	this.surname= surname;
+    	this.firstName = fisrstName;
+    	this.phoneNumber = phoneNumber;
+    	this.code = code;
+    	this.dbName= dbName;
+    	this.upLineCode = upLineCode;
+    	this.upLineSide = upLineSide;
+	}
 
     public String getUpLineSide() {
 		return upLineSide;
@@ -20,10 +37,7 @@ public class Distributor {
 		this.upLineSide = upLineSide;
 	}
 
-	private String phoneNumber;
-    private String leftSL= null;
-    private String rightSL=null;
-    private String dbName=null;
+	
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;

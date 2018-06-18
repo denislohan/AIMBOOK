@@ -47,7 +47,7 @@ public class DBConnector implements InformationStore {
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Error: you do not have access to the DB now. Stored locally, will upload later");
 			success = false;
 		} finally {
 			try {
@@ -104,7 +104,8 @@ public void setUplineSide(String uplinecode, String distr_code,String side) {
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println("Error: you do not have access to the DB now Stored locally will upload later");
 		}
 		finally {
 			try {
